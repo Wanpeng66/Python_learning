@@ -45,13 +45,12 @@ class special(object):
 
 if __name__ == '__main__':
     sp = special("aa", 25)
-    print(sp.__str__())
     # 打印一个实例时，会默认打印返回__str__方法的返回值
     print(sp)
 
     # 对实例进行遍历时，会调用__item__方法返回的迭代对象的__next__方法
-    #for age in sp:
-        #print(age)
+    for age in sp:
+        print(age)
 
     # 此时会调用实例的__getitem__方法
     print(sp[1])
