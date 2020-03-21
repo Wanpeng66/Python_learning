@@ -18,10 +18,11 @@ def basic_process():
     p.join()
     print('Child process end.')
 
+# 多进程中，同一个变量，各自有一份拷贝存在于每个进程中，互不影响
 def concurrency_run(name,lock):
-    lock.acquire()
+    # lock.acquire()
     print("子进程 %s 获得锁执行代码..." % name)
-    lock.release()
+    # lock.release()
 # 进程之间如果共享临界变量或临界区域 也需要加锁
 def concurrency_process():
     print("parent is processing %s " % os.getpid())
@@ -76,7 +77,8 @@ def communicateWithQueue():
 
 if __name__ == "__main__":
     basic_process()
-    concurrency_process()
+    # 多进程中，同一个变量，各自有一份拷贝存在于每个进程中，互不影响
+    #concurrency_process()
     process_pool(3)
     test_subprocess()
     communicateWithQueue()
