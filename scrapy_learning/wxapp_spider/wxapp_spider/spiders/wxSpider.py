@@ -2,7 +2,7 @@
 from scrapy.linkextractors import LinkExtractor
 from scrapy.spiders import CrawlSpider, Rule
 
-from items import MyImageItem
+from wxapp_spider.wxapp_spider.items  import MyImageItem
 
 
 class WxspiderSpider(CrawlSpider):
