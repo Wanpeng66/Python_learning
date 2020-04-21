@@ -8,11 +8,12 @@ import os
 
 from scrapy.exporters import JsonLinesItemExporter
 from scrapy.pipelines.images import ImagesPipeline
-
-import settings
-
+from wxapp_spider.wxapp_spider import settings
 
 # 存储页面数据为json文件
+
+
+
 class WxappSpiderPipeline(object):
     def __init__(self):
         self.wxjc = open("D:/ep/uploads/wxjc.json", "wb")
