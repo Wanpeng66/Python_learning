@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Python_learning.iml" filepath="$PROJECT_DIR$/.idea/Python_learning.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fang/fang.iml" filepath="$PROJECT_DIR$/fang/fang.iml" />
+      <module fileurl="file://$PROJECT_DIR$/scrapy_learning/scrapy_learning.iml" filepath="$PROJECT_DIR$/scrapy_learning/scrapy_learning.iml" />
+    </modules>
+  </component>
+</project>
