@@ -2,30 +2,30 @@ import numpy as npy
 
 
 def homework2():
-   arr = npy.arange(0, 20)
-   print(arr.reshape((4, 5)))
-   print(npy.resize(arr, (5, 6)))
+    arr = npy.arange(0, 20)
+    print(arr.reshape((4, 5)))
+    print(npy.resize(arr, (5, 6)))
 
-   arr = npy.reshape(npy.arange(0, 16), (4, 4))
-   print(arr.astype(str))
+    arr = npy.reshape(npy.arange(0, 16), (4, 4))
+    print(arr.astype(str))
 
-   arr = npy.reshape(npy.arange(0, 16), (4, 4))
-   arr = arr*10+100
-   print(arr)
-   print(arr.mean())
-   print(npy.sum(arr, axis=0))
-   print(npy.sum(arr, axis=1))
+    arr = npy.reshape(npy.arange(0, 16), (4, 4))
+    arr = arr * 10 + 100
+    print(arr)
+    print(arr.mean())
+    print(npy.sum(arr, axis=0))
+    print(npy.sum(arr, axis=1))
 
-   arr = npy.reshape(npy.arange(25), (5, 5))
-   print(arr)
-   print(arr[4])
-   print(arr[:2, 3:])
-   print(arr[3][2])
+    arr = npy.reshape(npy.arange(25), (5, 5))
+    print(arr)
+    print(arr[4])
+    print(arr[:2, 3:])
+    print(arr[3][2])
 
-   arr = npy.resize(npy.arange(9), (3, 3))
-   print(arr)
-   arr1 = npy.array(arr[arr >= 5])
-   print(arr1)
+    arr = npy.resize(npy.arange(9), (3, 3))
+    print(arr)
+    arr1 = npy.array(arr[arr >= 5])
+    print(arr1)
 
 
 if __name__ == '__main__':
@@ -62,5 +62,5 @@ if __name__ == '__main__':
     print(arr1)
     arr2 = arr1.astype(npy.int64)
     print(arr2)
-    
+
     homework2()

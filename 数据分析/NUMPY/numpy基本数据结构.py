@@ -17,10 +17,12 @@ def task1():
 def task2():
     print(np.linspace(5, 15, num=10, endpoint=False, dtype=np.int))
 
+
 def task3():
     print(np.zeros((4, 4)))
     print(np.ones((2, 3)))
     print(np.eye(3, 3))
+
 
 def homework():
     task1()

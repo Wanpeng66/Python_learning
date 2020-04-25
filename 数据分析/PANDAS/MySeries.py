@@ -14,7 +14,7 @@ def homework4():
     s = pd.Series(a, index=["Jack", "Marry", "Tom", "Zack"], name="homework1")
     print(s)
     print("-------------------")
-    s = pd.Series(data=npy.random.rand(10)*100, index=list("abcdefghij"))
+    s = pd.Series(data=npy.random.rand(10) * 100, index=list("abcdefghij"))
     print(s)
     print(s["b"])
     print(s["c"])

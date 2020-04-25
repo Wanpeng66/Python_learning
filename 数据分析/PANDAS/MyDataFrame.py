@@ -43,5 +43,31 @@ if __name__ == '__main__':
 
     # 创建方法四：由字典列表初始化
     p = [{"a": 10, "b": 20}, {"a": 60, "b": 70, "c": 0}]
-    d = pd.DataFrame(p)
+    d = pd.DataFrame(p, index=["x", "y"])
     print(d)
+
+    print("---------------------------")
+    # dateframe的索引
+    df = pd.DataFrame(npy.arange(12).reshape((3, 4)), index=["a", "b", "c"], columns=["x", "y", "z", "w"])
+    print(df)
+    # 直接写索引，默认是按列取
+    d1 = df["y"]
+    # 只取一列则返回一个series(一维数组)
+    print(d1, type(d1))
+    print("------------------")
+    # 取多列则返回一个子dataframe
+    d2 = df[["z", "w"]]
+    print(d2, type(d2))
+    print("-----------------")
+    # 按行取值
+    d3 = df.loc["a"]
+    # 如果只取一行，那么会变成series，然后列名变index
+    print(d3, type(d3))
+    print("---------------")
+    # 如果取多行，则返回一个子dataframe
+    d4 = df.loc[["b", "c"]]
+    print(d4, type(d4))
+    print("---------------")
+    # .iloc[] 是按行的下标进行取值，支持切片
+    d5 = df.iloc[1:3]
+    print(d5, type(d5))
